@@ -102,6 +102,24 @@ class EmojiEngine(
             // Always load typeface for in-app rendering
             loadEmojiTypeface(packDir)
 
+            // Attempt system-wide font installation via all available no-root methods
+            try {
+                val fontResult = installFontSystemWide(packDir)
+                if (fontResult != null && fontResult.succeededMethods.isNotEmpty()) {
+                    Log.i(TAG, "Font install succeeded: ${fontResult.succeededMethods.map { it.name }}")
+                    // If process-level reflection succeeded, bump coverage
+                    if (fontResult.processTypefaceReplaced && coveragePercent < 80) {
+                        coveragePercent = 80
+                        mode = ApplyMode.HIGH_COMPAT
+                    }
+                    if (fontResult.bestCoverage > coveragePercent) {
+                        coveragePercent = fontResult.bestCoverage
+                    }
+                }
+            } catch (e: Exception) {
+                Log.w(TAG, "Font install manager error (non-fatal): ${e.message}")
+            }
+
             // Update database
             packDao.clearAppliedPacks()
             packDao.setApplied(pack.id)
@@ -212,6 +230,22 @@ class EmojiEngine(
         } catch (e: Exception) {
             Log.d(TAG, "Vivo restore: ${e.message}")
         }
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Font Installation via FontInstallManager (all system paths)
+    // ─────────────────────────────────────────────────────────────────────────
+
+    private val fontInstallManager by lazy { FontInstallManager(context, deviceInfo) }
+
+    suspend fun installFontSystemWide(packDir: File): FontInstallManager.InstallResult? {
+        val ttfFile = findEmojiFont(packDir) ?: return null
+        return fontInstallManager.installFont(ttfFile)
+    }
+
+    fun getAdbCommands(packDir: File): List<String> {
+        val ttfFile = findEmojiFont(packDir) ?: return listOf("# No TTF font found in pack")
+        return fontInstallManager.buildAdbCommands(ttfFile)
     }
 
     // ─────────────────────────────────────────────────────────────────────────

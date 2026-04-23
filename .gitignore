@@ -1,0 +1,27 @@
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android generated
+gen/
+out/
+release/
+
+# Keystore
+*.jks
+*.keystore
+
+# APK outputs (tracked separately via CI artifacts)
+*.apk
+*.aab

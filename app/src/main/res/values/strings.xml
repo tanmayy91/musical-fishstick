@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vivo iOS Emoji Changer</string>
+    <string name="keyboard_service_label">iOS Emoji Keyboard</string>
+    <string name="accessibility_service_label">Emoji Overlay Service</string>
+    <string name="accessibility_service_description">Enhances emoji rendering system-wide by monitoring text views and applying iOS emoji glyphs across all apps.</string>
+
+    <!-- Home -->
+    <string name="btn_apply_ios">Apply iOS Emojis</string>
+    <string name="btn_restore_default">Restore Default</string>
+    <string name="btn_enable_keyboard">Enable iOS Keyboard</string>
+    <string name="btn_enable_accessibility">Enable Accessibility</string>
+    <string name="btn_show_adb">Show ADB Commands</string>
+    <string name="label_smart_auto_select">Smart Auto Select</string>
+    <string name="label_compatibility_status">Compatibility Status</string>
+    <string name="status_not_active">Not Active</string>
+    <string name="status_full_system">Full System-Wide Support</string>
+    <string name="status_high_compat">High Compatibility Mode</string>
+    <string name="status_partial">Partial Support</string>
+    <string name="status_keyboard_backup">Keyboard Backup Active</string>
+    <string name="loading_detecting">Detecting device…</string>
+    <string name="loading_downloading">Downloading emoji packs…</string>
+    <string name="loading_comparing">Comparing packs…</string>
+    <string name="loading_applying">Applying iOS emojis…</string>
+    <string name="loading_fonts">Installing to system font directories…</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_preview">Preview</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Preview -->
+    <string name="preview_title">Emoji Preview</string>
+    <string name="preview_no_pack">Download a pack first to preview iOS emojis</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_auto_reapply">Auto-reapply on boot</string>
+    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_haptic">Haptic feedback</string>
+    <string name="settings_auto_update">Auto-update emoji packs</string>
+    <string name="settings_keyboard_section">iOS Emoji Keyboard</string>
+    <string name="settings_accessibility_section">Accessibility Service</string>
+    <string name="btn_setup_keyboard">Set Up Keyboard</string>
+    <string name="btn_setup_accessibility">Set Up Accessibility</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_restore_title">Restore Default Emojis</string>
+    <string name="dialog_restore_message">This will remove iOS emojis and restore the original Vivo emojis.</string>
+    <string name="dialog_restore_positive">Restore</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_adb_title">ADB Commands — Full System Font</string>
+    <string name="dialog_adb_copy">Copy to Clipboard</string>
+    <string name="dialog_close">Close</string>
+    <string name="snack_copied">Copied to clipboard!</string>
+</resources>

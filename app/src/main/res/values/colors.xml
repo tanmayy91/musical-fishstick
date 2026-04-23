@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors -->
+    <color name="ios_blue">#007AFF</color>
+    <color name="ios_blue_dark">#0062CC</color>
+    <color name="ios_purple">#AF52DE</color>
+    <color name="ios_green">#34C759</color>
+    <color name="ios_orange">#FF9500</color>
+    <color name="ios_red">#FF3B30</color>
+    <color name="ios_yellow">#FFCC00</color>
+    <color name="ios_gray">#8E8E93</color>
+    <color name="ios_light_gray">#C7C7CC</color>
+
+    <!-- Background colors (dark theme) -->
+    <color name="bg_primary">#000000</color>
+    <color name="bg_secondary">#1C1C1E</color>
+    <color name="bg_tertiary">#2C2C2E</color>
+    <color name="bg_card">#1C1C1E</color>
+    <color name="bg_input">#3A3A3C</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#EBEBF5</color>
+    <color name="text_tertiary">#EBEBF599</color>
+    <color name="text_placeholder">#3C3C4399</color>
+
+    <!-- Status indicator colors -->
+    <color name="status_full">#34C759</color>
+    <color name="status_high">#007AFF</color>
+    <color name="status_partial">#FFCC00</color>
+    <color name="status_keyboard">#FF9500</color>
+    <color name="status_none">#8E8E93</color>
+
+    <!-- Separator / divider -->
+    <color name="separator">#54545899</color>
+
+    <!-- Button -->
+    <color name="btn_primary">#007AFF</color>
+    <color name="btn_primary_pressed">#0062CC</color>
+    <color name="btn_destructive">#FF3B30</color>
+    <color name="btn_secondary">#3A3A3C</color>
+
+    <!-- Keyboard -->
+    <color name="keyboard_bg">#1C1C1E</color>
+    <color name="keyboard_key_bg">#3A3A3C</color>
+    <color name="keyboard_key_pressed">#636366</color>
+
+    <!-- Material theme required -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

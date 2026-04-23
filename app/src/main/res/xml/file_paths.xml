@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="emoji_packs" path="emoji_packs/" />
+    <files-path name="active_emoji" path="active_emoji/" />
+    <files-path name="font_cache" path="font_cache/" />
+    <files-path name="vivo_theme" path="vivo_theme/" />
+    <external-path name="external_files" path="." />
+    <cache-path name="cache" path="." />
+</paths>
